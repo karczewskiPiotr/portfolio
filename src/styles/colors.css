@@ -1,0 +1,48 @@
+:root {
+  /* compositionals */
+  --darker-blue: #3377ff;
+  --lighter-blue: #36abff;
+
+  /* gradients */
+  --gradient-blue: linear-gradient(to right, var(--darker-blue), var(--lighter-blue));
+  --gradient-blue-reversed: linear-gradient(to right, var(--lighter-blue), var(--darker-blue));
+  --gradient-black: linear-gradient(to right, #262626, #000000);
+  --gradient-black-reversed: linear-gradient(to right, #000000, #262626);
+
+  /* text */
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-grey: #898987;
+}
+
+.text-gradient-blue {
+  background: var(--gradient-blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.text-gradient-blue-reversed {
+  background: var(--gradient-blue-reversed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.text-gradient-black {
+  background: var(--gradient-black);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.text-gradient-black-reversed {
+  background: var(--gradient-black-reversed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}

@@ -1,5 +1,6 @@
 @import "styles/typography.css";
 @import "styles/spacing.css";
+@import "styles/colors.css";
 
 body {
   margin: 0;
