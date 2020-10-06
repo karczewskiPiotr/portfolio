@@ -1,0 +1,20 @@
+{
+  "short_name": "Piotr Karczewski Portfolio",
+  "name": "Piotr Karczewski | Full-stack Developer & Designer Portfolio",
+  "description": "Piotr Karczewski - Portfolio | Full-stack Developer & Designer",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes":"512x512 144x144 64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "developer": {
+    "name": "Piotr Karczewski",
+    "url": "https://github.com/karczewskiPiotr"
+  }
+}
