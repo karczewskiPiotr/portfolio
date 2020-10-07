@@ -1,0 +1,24 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'logo menu-icon'
+    'menu-content menu-content';
+  background-color: white;
+  position: relative;
+}
+
+.logo {
+  grid-area: logo;
+  width: 48px;
+  height: auto;
+}
+
+.menu-icon {
+  grid-area: menu-icon;
+  width: 24px;
+  height: auto;
+  justify-self: end;
+  align-self: center;
+}

@@ -8,7 +8,6 @@ i18n
   .init({
     lng: 'en',
     debug: true,
-    keySeparator: false,
     interpolation: {
       escapeValue: false,
     },
