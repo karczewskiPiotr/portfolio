@@ -1,0 +1,14 @@
+{
+  "title": "Full-stack Designer & Developer",
+  "subtitle": {
+    "part1": "I design and code ",
+    "part2": {
+      "var1": "things",
+      "var2": "applications",
+      "var3": "pages"
+    },
+    "part3": " for the web."
+  },
+  "contactBtn": "Get in touch",
+  "seeWork": "View my work"
+}
