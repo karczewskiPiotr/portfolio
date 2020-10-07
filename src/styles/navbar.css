@@ -7,6 +7,18 @@
     'menu-content menu-content';
   background-color: white;
   position: relative;
+  box-shadow: inherit;
+  padding-bottom: var(--space-xs);
+  padding-top: var(--space-xs);
+}
+
+.sticky-navbar {
+  box-shadow: 0px 2px 8px #adadad;
+}
+
+.innerSticky {
+  box-shadow: inherit;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .logo {
@@ -18,6 +30,14 @@
 .menu-icon {
   grid-area: menu-icon;
   width: 24px;
+  height: auto;
+  justify-self: end;
+  align-self: center;
+}
+
+.back-icon {
+  grid-area: menu-icon;
+  width: 30px;
   height: auto;
   justify-self: end;
   align-self: center;
