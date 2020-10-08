@@ -5,30 +5,58 @@ import { Transition } from 'react-spring/renderprops';
 
 type DropdownProps = {
   isOpen: boolean;
+  setIsOpen: any;
+  windowWidth: number;
 };
 
-const Dropdown = ({ isOpen }: DropdownProps) => {
+const Dropdown = ({ isOpen, windowWidth, setIsOpen }: DropdownProps) => {
   const { t } = useTranslation();
+
+  const closeDropdown = function (): boolean {
+    if (windowWidth < 992) setIsOpen(false);
+    return true;
+  };
 
   return (
     <Transition
       items={isOpen}
       from={{ height: 0, overflow: 'hidden' }}
-      enter={{ height: "auto", overflow: 'hidden' }}
+      enter={{ height: 'auto', overflow: 'hidden' }}
       leave={{ height: 0, overflow: 'hidden' }}
+      initial={null}
     >
       {(isOpen) =>
         isOpen &&
         ((props) => (
-          <div
-            style={props}
-            className='dropdown'
-          >
+          <div style={props} className='dropdown'>
             <ul>
-              <li className='margin-bottom-sm'>{t('menu.work')}</li>
-              <li className='margin-bottom-sm'>{t('menu.skills')}</li>
-              <li className='margin-bottom-sm'>{t('menu.about')}</li>
-              <li className='margin-bottom-sm'>{t('menu.cv')}</li>
+              <li className='margin-bottom-sm'>
+                <a className='highlight' href='#' onClick={closeDropdown}>
+                  {t('menu.work')}
+                </a>
+              </li>
+              <li className='margin-bottom-sm'>
+                <a className='highlight' href='#' onClick={closeDropdown}>
+                  {t('menu.skills')}
+                </a>
+              </li>
+              <li className='margin-bottom-sm'>
+                <a className='highlight' href='#' onClick={closeDropdown}>
+                  {t('menu.about')}
+                </a>
+              </li>
+              <li className='margin-bottom-sm resume'>
+                <span className='resume-text'>
+                  <a
+                    className='highlight'
+                    href='#'
+                    target='_blank'
+                    onClick={closeDropdown}
+                  >
+                    {t('menu.cv')}
+                  </a>
+                </span>
+              </li>
             </ul>
           </div>
         ))

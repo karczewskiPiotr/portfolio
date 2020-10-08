@@ -13,3 +13,82 @@
   padding: 0px;
   font-weight: bold;
 }
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--text-black);
+  transition: transform 0.2s;
+}
+
+.highlight:hover {
+  transform: scale(1.05);
+  background: var(--gradient-blue-reversed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 992px) {
+  .dropdown {
+    box-shadow: none;
+    align-self: center;
+  }
+
+  .dropdown ul {
+    text-align: right;
+    font-weight: 600;
+    height: fit-content;
+  }
+
+  .dropdown ul li {
+    display: inline;
+    margin-right: var(--space-sm);
+    font-size: var(--text-sm);
+    cursor: pointer;
+  }
+
+  .resume {
+    z-index: 1;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    margin: auto;
+    max-width: 22em;
+    position: relative;
+    background: white;
+    background-clip: padding-box;
+    border: solid 3px transparent;
+    border-radius: 1em;
+  }
+
+  .resume:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -3px;
+    border-radius: inherit;
+    background: var(--gradient-blue);
+  }
+
+  .resume-text {
+    background: var(--gradient-blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .resume-text .highlight {
+    transform: none;
+  }
+
+  .resume-text:hover {
+    background: var(--gradient-blue-reversed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
