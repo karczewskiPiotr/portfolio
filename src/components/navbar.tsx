@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/navbar.css';
 import Logo from '../images/logo.svg';
 import Back from '../images/back.svg';
@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
     <Sticky activeClass='sticky-navbar' innerClass='innerSticky'>
       <nav className='navbar'>
-        <div className="navbar-content">
+        <div className='navbar-content'>
           <div className='logo-wrapper'>
             <img
               src={Logo}
@@ -80,13 +80,7 @@ const Navbar = () => {
                   )
             }
           </Transition>
-          <Suspense fallback={<div>Loding</div>}>
-            <Dropdown
-              isOpen={isOpen}
-              windowWidth={width}
-              setIsOpen={setIsOpen}
-            />
-          </Suspense>
+          <Dropdown isOpen={isOpen} windowWidth={width} setIsOpen={setIsOpen} />
         </div>
       </nav>
     </Sticky>

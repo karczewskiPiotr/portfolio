@@ -1,0 +1,15 @@
+.landing {
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 500;
+}
+
+.standout {
+  z-index: -1 !important;
+  background: var(--gradient-blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
