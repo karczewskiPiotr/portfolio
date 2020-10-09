@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import './App.css';
 import Navbar from './components/navbar';
 import Landing from './components/landing';
 

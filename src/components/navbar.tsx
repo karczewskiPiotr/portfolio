@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
 
-  const handleWindowSizeChange = () => {
+  const handleWindowSizeChange = (): void => {
     setWidth(window.innerWidth);
   };
 
@@ -26,10 +26,8 @@ const Navbar = () => {
   useEffect(() => {
     if (width >= 992) {
       setIsOpen(true);
-    } else {
-      if (isOpen === true) {
-        setIsOpen(false);
-      }
+    } else if (isOpen === true) {
+      setIsOpen(false);
     }
   }, [width]);
 

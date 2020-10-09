@@ -7,33 +7,28 @@ const Landing = () => {
   const { t } = useTranslation();
   const [variant, setVariant] = useState(1);
 
+  const setDelayedVariant = (variant: number): void => {
+    setTimeout(() => {
+      setVariant(variant);
+    }, 3000);
+  };
+
   useEffect(() => {
-    if (variant === 1) {
-      setTimeout(() => {
-        setVariant(2);
-      }, 3000);
-    } else if (variant === 2) {
-      setTimeout(() => {
-        setVariant(3);
-      }, 3000);
-    } else if (variant === 3) {
-      setTimeout(() => {
-        setVariant(1);
-      }, 3000);
+    switch (variant) {
+      case 1:
+        setDelayedVariant(2);
+        break;
+      case 2:
+        setDelayedVariant(3);
+        break;
+      case 3:
+        setDelayedVariant(1);
+        break;
     }
   }, [variant]);
 
-  const pickVariant = (variant: number) => {
-    switch (variant) {
-      case 1:
-        return t('subtitle.part2.var1');
-      case 2:
-        return t('subtitle.part2.var2');
-      case 3:
-        return t('subtitle.part2.var3');
-      default:
-        return '';
-    }
+  const getVariantText = (variant: number): string => {
+    return t(`subtitle.part2.var${variant}`);
   };
 
   return (
@@ -66,7 +61,7 @@ const Landing = () => {
           >
             {(variant: number) => (props) => (
               <span className='standout' style={props}>
-                {pickVariant(variant)}
+                {getVariantText(variant)}
               </span>
             )}
           </Transition>
