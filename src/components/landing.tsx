@@ -68,6 +68,14 @@ const Landing = () => {
         }
         {t('subtitle.part3')}
       </p>
+      <div className='call-to-action margin-top-md'>
+        <a className='email-btn margin-right-xs' href='mailto:p.karczewsk@gmail.com'>
+          {t('contactBtn')}
+        </a>
+        <a className='work-btn margin-left-xs' href='#'>
+          {t('seeWork')}
+        </a>
+      </div>
     </section>
   );
 };

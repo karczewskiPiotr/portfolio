@@ -1,6 +1,6 @@
 .landing {
   text-align: center;
-  height: 100vh;
+  height: calc(100vh - var(--space-xl) - 64px);
 }
 
 .subtitle {
@@ -14,4 +14,41 @@
   -webkit-text-fill-color: transparent;
   position: relative;
   z-index: -1;
+}
+
+.email-btn,
+.work-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.email-btn {
+  font-weight: 500;
+  background: var(--gradient-blue-reversed);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 2rem;
+  color: var(--text-white);
+  box-shadow: 0px 4px 5px rgba(54, 171, 255, 0.5);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.email-btn:hover {
+  box-shadow: 0px 5px 10px rgba(54, 171, 255, 0.7);
+}
+
+.work-btn {
+  font-weight: 550;
+  background: var(--gradient-blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.2s;
+}
+
+.work-btn:hover {
+  transform: scale(1.05);
+  background: var(--gradient-blue-reversed);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
