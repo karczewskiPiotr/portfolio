@@ -34,7 +34,7 @@ const Navbar = () => {
   const transitions = useTransition(isOpen, null, {
     from: { opacity: 0, transform: 'rotate(-270deg)' },
     enter: { opacity: 1, transform: 'rotate(0deg)' },
-    leave: { opacity: 0, transform: 'rotate(-270deg)' },
+    leave: { opacity: 0, transform: 'rotate(270deg)' },
   });
 
   return (
