@@ -1,0 +1,6 @@
+.about {
+  text-align: center;
+  background: var(--gradient-blue);
+  padding: var(--space-lg) var(--space-md) var(--space-xxl) var(--space-md);
+  color: var(--text-white);
+}
