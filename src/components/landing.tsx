@@ -59,7 +59,7 @@ const Landing = () => {
               width: 0,
             }}
           >
-            {(variant: number) => (props) => (
+            {(variant) => (props) => (
               <span className='standout' style={props}>
                 {getVariantText(variant)}
               </span>

@@ -7,9 +7,10 @@
 }
 
 .standout {
-  z-index: -1 !important;
   background: var(--gradient-blue);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: -1;
 }
