@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react';
 import Navbar from './components/navbar';
 import Landing from './components/landing';
-import About from './components/about'
+import About from './components/about';
+import Skills from './components/skills';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Navbar />
         <Landing />
         <About />
+        <Skills />
       </Suspense>
     </div>
   );
