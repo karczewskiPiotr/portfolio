@@ -59,6 +59,7 @@ a {
     background-clip: padding-box;
     border: solid 3px transparent;
     border-radius: 1em;
+
   }
 
   .resume:before {
@@ -72,6 +73,7 @@ a {
     margin: -3px;
     border-radius: inherit;
     background: var(--gradient-blue);
+
   }
 
   .resume-text {
@@ -79,6 +81,7 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
   }
 
   .resume-text .highlight {

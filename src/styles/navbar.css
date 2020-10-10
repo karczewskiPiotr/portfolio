@@ -12,17 +12,21 @@
   padding-top: var(--space-xs);
 }
 
+.navbar {
+  background-color: white;
+  height: 67px;
+}
+
 @media only screen and (min-width: 992px) {
   .navbar-content {
     grid-template-areas: 'logo menu-content';
     max-width: 1124px;
     margin: auto;
   }
-}
 
-.navbar {
-  background-color: white;
-  height: 67px;
+  .navbar {
+    height: 77px;
+  }
 }
 
 .logo-wrapper {
@@ -46,7 +50,7 @@
 
 .identity-component {
   font-weight: bold;
-  font-size: var(--text-lg);
+  font-size: 1.5rem;
 }
 
 .sticky-navbar {

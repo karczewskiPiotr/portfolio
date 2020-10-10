@@ -1,6 +1,29 @@
+.about img {
+  display: none;
+}
+
 .about {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
   background: var(--gradient-blue);
-  padding: var(--space-lg) var(--space-md) var(--space-xxl) var(--space-md);
   color: var(--text-white);
+  text-align: center;
+  padding: var(--space-lg) var(--space-md) var(--space-xxl) var(--space-md);
+  max-width: 840px;
+}
+
+@media only screen and (min-width: 992px) {
+  .about img {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  .about-content {
+    background: none;
+  }
 }

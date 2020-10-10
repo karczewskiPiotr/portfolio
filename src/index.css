@@ -1,8 +1,11 @@
-@import "styles/typography.css";
-@import "styles/spacing.css";
-@import "styles/colors.css";
+@import 'styles/typography.css';
+@import 'styles/spacing.css';
+@import 'styles/colors.css';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
 }
-

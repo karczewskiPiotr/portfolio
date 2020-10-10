@@ -5,7 +5,7 @@
     "about": "About",
     "cv": "Resume"
   },
-  "title": "Full-stack Designer & Developer",
+  "title": { "part1": "Full-stack Developer & ", "part2": "Designer" },
   "subtitle": {
     "part1": "I design and code ",
     "part2": {

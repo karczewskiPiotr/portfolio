@@ -41,7 +41,7 @@ const Dropdown = ({ isOpen, windowWidth, setIsOpen }: DropdownProps) => {
                 </a>
               </li>
               <li className='margin-bottom-sm'>
-                <a className='highlight' href='#' onClick={closeDropdown}>
+                <a className='highlight' href='#about-section' onClick={closeDropdown}>
                   {t('menu.about')}
                 </a>
               </li>

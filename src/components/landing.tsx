@@ -33,48 +33,55 @@ const Landing = () => {
 
   return (
     <section className='landing margin-top-xl'>
-      <h1>{t('title')}</h1>
-      <p className='subtitle'>
-        {t('subtitle.part1')}
-        {
-          <Transition
-            items={variant}
-            config={{ friction: 16 }}
-            from={{
-              opacity: 0,
-              transform: 'rotateX(180deg)',
-              display: 'inline-block',
-              width: 0,
-            }}
-            enter={{
-              opacity: 1,
-              transform: 'rotateX(0deg)',
-              display: 'inline-block',
-              width: 'auto',
-            }}
-            leave={{
-              opacity: 0,
-              transform: 'rotateX(180deg)',
-              display: 'inline-block',
-              width: 0,
-            }}
+      <div className='margin-top-xl'>
+        <h1 className='title'>
+          {t('title.part1')} <span>{t('title.part2')}</span>
+        </h1>
+        <p className='subtitle'>
+          {t('subtitle.part1')}
+          {
+            <Transition
+              items={variant}
+              config={{ friction: 16 }}
+              from={{
+                opacity: 0,
+                transform: 'rotateX(180deg)',
+                display: 'inline-block',
+                width: 0,
+              }}
+              enter={{
+                opacity: 1,
+                transform: 'rotateX(0deg)',
+                display: 'inline-block',
+                width: 'auto',
+              }}
+              leave={{
+                opacity: 0,
+                transform: 'rotateX(180deg)',
+                display: 'inline-block',
+                width: 0,
+              }}
+            >
+              {(variant) => (props) => (
+                <span className='standout' style={props}>
+                  {getVariantText(variant)}
+                </span>
+              )}
+            </Transition>
+          }
+          {t('subtitle.part3')}
+        </p>
+        <div className='call-to-action margin-top-md'>
+          <a
+            className='email-btn margin-right-xs'
+            href='mailto:p.karczewsk@gmail.com'
           >
-            {(variant) => (props) => (
-              <span className='standout' style={props}>
-                {getVariantText(variant)}
-              </span>
-            )}
-          </Transition>
-        }
-        {t('subtitle.part3')}
-      </p>
-      <div className='call-to-action margin-top-md'>
-        <a className='email-btn margin-right-xs' href='mailto:p.karczewsk@gmail.com'>
-          {t('contactBtn')}
-        </a>
-        <a className='work-btn margin-left-xs' href='#'>
-          {t('seeWork')}
-        </a>
+            {t('contactBtn')}
+          </a>
+          <a className='work-btn margin-left-xs' href='#'>
+            {t('seeWork')}
+          </a>
+        </div>
       </div>
     </section>
   );
