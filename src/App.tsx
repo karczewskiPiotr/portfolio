@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import Landing from './components/landing';
 import About from './components/about';
 import Skills from './components/skills';
+import Collaborations from './components/collaborations'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <About />
           <Skills />
         </div>
+        <Collaborations />
       </Suspense>
     </div>
   );

@@ -1,0 +1,25 @@
+.collaborations {
+  text-align: center;
+}
+
+.collaborations h4 {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-grey);
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.company {
+  margin: var(--space-sm) var(--space-md);
+}
+
+@media only screen and (max-width: 768px) {
+  .company {
+    height: 48px;
+  }
+}
