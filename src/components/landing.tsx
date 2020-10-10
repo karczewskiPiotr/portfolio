@@ -33,7 +33,7 @@ const Landing = () => {
 
   return (
     <section className='landing margin-top-xl'>
-      <div className='margin-top-xl'>
+      <div className='margin-top-xl margin-horizontal-sm'>
         <h1 className='title'>
           {t('title.part1')} <span>{t('title.part2')}</span>
         </h1>
