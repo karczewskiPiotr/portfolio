@@ -6,12 +6,14 @@ import Skills from './components/skills';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className='app'>
       <Suspense fallback={<div>Loding</div>}>
         <Navbar />
         <Landing />
-        <About />
-        <Skills />
+        <div className="pattern-background">
+          <About />
+          <Skills />
+        </div>
       </Suspense>
     </div>
   );
