@@ -36,6 +36,12 @@
 
 @media only screen and (min-width: 768px) {
   .technologies {
+    padding: 0px var(--space-xxl);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .technologies {
     padding: 0px var(--space-xl);
   }
 }
