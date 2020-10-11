@@ -5,8 +5,10 @@ import './i18n';
 import App from './App';
 import { FirebaseAppProvider } from 'reactfire';
 
+const API_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
+
 const firebaseConfig = {
-  apiKey: 'AIzaSyDOrT4PwYyQMZUbzft9-P7M8xac03lWaSg',
+  apiKey: API_KEY,
   authDomain: 'portfolio-7c0fd.firebaseapp.com',
   databaseURL: 'https://portfolio-7c0fd.firebaseio.com',
   projectId: 'portfolio-7c0fd',
