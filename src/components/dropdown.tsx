@@ -3,16 +3,16 @@ import '../styles/dropdown.css';
 import { useTranslation } from 'react-i18next';
 import { Transition } from 'react-spring/renderprops';
 
-type DropdownProps = {
+type Props = {
   isOpen: boolean;
-  setIsOpen: any;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   windowWidth: number;
 };
 
-const Dropdown = ({ isOpen, windowWidth, setIsOpen }: DropdownProps) => {
+const Dropdown: React.FC<Props> = ({ isOpen, windowWidth, setIsOpen }) => {
   const { t } = useTranslation();
 
-  const closeDropdown = function (): boolean {
+  const closeDropdown = (): boolean => {
     if (windowWidth < 992) setIsOpen(false);
     return true;
   };

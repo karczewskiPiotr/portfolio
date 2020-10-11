@@ -2,12 +2,12 @@ import React from 'react';
 import '../styles/collaborations.css';
 import { useTranslation } from 'react-i18next';
 
-const Collaborations = () => {
+const Collaborations: React.FC = () => {
   const { t } = useTranslation();
 
-  const companies = ['saxion', 'imd-ma', 'politie', 'sodaq'];
+  const companies: string[] = ['saxion', 'imd-ma', 'politie', 'sodaq'];
 
-  const getCompanies = (companies: Array<string>) => {
+  const getCompanies = (companies: string[]): JSX.Element[] => {
     return companies.map((company) => {
       const logo = require(`../images/companies/${company}-logo.svg`);
 

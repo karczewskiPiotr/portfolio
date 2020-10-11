@@ -3,7 +3,7 @@ import '../styles/about.css';
 import { useTranslation } from 'react-i18next';
 import Background from '../images/about-background.svg';
 
-const About = () => {
+const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (

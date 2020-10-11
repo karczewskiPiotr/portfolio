@@ -2,10 +2,16 @@ import React from 'react';
 import '../styles/skills.css';
 import { useTranslation } from 'react-i18next';
 
-const Skills = () => {
+type Technologies = {
+  main: string[];
+  complementary: string[],
+  rare: string[]
+}
+
+const Skills: React.FC = () => {
   const { t } = useTranslation();
 
-  const technologies = {
+  const technologies: Technologies = {
     main: [
       'Ruby',
       'Rails',
@@ -25,7 +31,7 @@ const Skills = () => {
     rare: ['Java', 'C++', 'C#'],
   };
 
-  const getTechnologies = (technologies: Array<string>) => {
+  const getTechnologies = (technologies: string[]): JSX.Element[] => {
     return technologies.map((technology) => {
       const logo = require(`../images/technologies/${technology
         .toLowerCase()

@@ -7,9 +7,9 @@ import Dropdown from './dropdown';
 import { useTransition, animated } from 'react-spring';
 import Sticky from 'react-stickynode';
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [width, setWidth] = useState<number>(window.innerWidth);
 
   const handleWindowSizeChange = (): void => {
     setWidth(window.innerWidth);

@@ -5,7 +5,7 @@ import About from './components/about';
 import Skills from './components/skills';
 import Collaborations from './components/collaborations'
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className='app'>
       <Suspense fallback={<div>Loding</div>}>

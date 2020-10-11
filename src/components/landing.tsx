@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Transition } from 'react-spring/renderprops';
 import '../styles/landing.css';
 
-const Landing = () => {
+const Landing: React.FC = () => {
   const { t } = useTranslation();
   const [variant, setVariant] = useState(1);
 
