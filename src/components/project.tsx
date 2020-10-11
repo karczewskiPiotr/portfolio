@@ -1,21 +1,18 @@
 import React from 'react';
 import Arrow from '../images/arrow-icon.svg';
+import { ProjectType } from '../constants/types';
 
 type Props = {
-  project: {
-    name: string;
-    description: string;
-    cover?: string;
-  };
+  project: ProjectType;
 };
 
 const Project: React.FC<Props> = ({ project }) => {
   const { name, description, cover } = project;
 
   return (
-    <div className='project'>
+    <div className='project margin-bottom-lg'>
       <img
-        src='https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/122607209/original/532a93b6d0c5238d64a55c61f61dc8f895636616/do-material-ui-design-for-web-app.jpg'
+        src={cover}
         alt={`${name} cover`}
         className='margin-bottom-sm project-cover'
       />
