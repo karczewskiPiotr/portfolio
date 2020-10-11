@@ -1,0 +1,42 @@
+.projects-wrapper {
+  margin-bottom: var(--space-xxl);
+  scroll-margin-top: 67px;
+}
+
+@media only screen and (min-width: 992px) {
+  .projects-wrapper {
+    scroll-margin-top: 77px;
+  }
+}
+
+.projects {
+  margin: 0px auto;
+  max-width: 800px;
+}
+
+.projects h2 {
+  text-align: center;
+}
+
+.project-cover {
+  width: 100%;
+  height: 250;
+  box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.25);
+  border-radius: 25px;
+}
+
+.arrow {
+  height: auto;
+  width: 14px;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 992px) {
+  .arrow {
+    height: 16px;
+  }
+}
+
+.link {
+  font-weight: 500;
+}

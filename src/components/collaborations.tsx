@@ -11,7 +11,14 @@ const Collaborations: React.FC = () => {
     return companies.map((company) => {
       const logo = require(`../images/companies/${company}-logo.svg`);
 
-      return <img src={logo} alt={`${company} logo`} className='company' />;
+      return (
+        <img
+          src={logo}
+          alt={`${company} logo`}
+          key={company}
+          className='company'
+        />
+      );
     });
   };
 
