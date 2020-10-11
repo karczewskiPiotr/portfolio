@@ -13,8 +13,8 @@ const Projects: React.FC = () => {
 
   return (
     <section className='projects-wrapper margin-horizontal-sm' id='projects'>
+      <h2 className='margin-bottom-md'>{t('work')}</h2>
       <div className='projects'>
-        <h2 className='margin-bottom-md'>{t('work')}</h2>
         {projectsData.map((item) => {
           const project = item as ProjectType;
           return <Project key={project.name} project={project} />;
