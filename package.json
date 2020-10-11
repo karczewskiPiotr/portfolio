@@ -11,6 +11,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-stickynode": "^3.0.0",
+    "firebase": "^7.23.0",
     "i18next": "^19.8.2",
     "i18next-http-backend": "^1.0.21",
     "react": "^16.13.1",
@@ -19,6 +20,7 @@
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
     "react-stickynode": "^3.0.3",
+    "reactfire": "^2.0.3",
     "typescript": "~3.7.2"
   },
   "scripts": {
