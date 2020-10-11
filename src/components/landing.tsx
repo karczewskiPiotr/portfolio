@@ -78,7 +78,7 @@ const Landing: React.FC = () => {
           >
             {t('contactBtn')}
           </a>
-          <a className='work-btn margin-left-xs' href='#'>
+          <a className='work-btn margin-left-xs' href='#projects'>
             {t('seeWork')}
           </a>
         </div>

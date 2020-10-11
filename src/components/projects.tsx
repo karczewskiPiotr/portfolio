@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
   const projectsData = useFirestoreCollectionData(projectsRef);
 
   return (
-    <section className='projects-wrapper margin-horizontal-sm'>
+    <section className='projects-wrapper margin-horizontal-sm' id='projects'>
       <div className='projects'>
         <h2 className='margin-bottom-md'>{t('work')}</h2>
         {projectsData.map((item) => {

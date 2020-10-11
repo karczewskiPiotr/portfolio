@@ -31,7 +31,11 @@ const Dropdown: React.FC<Props> = ({ isOpen, windowWidth, setIsOpen }) => {
           <div style={props} className='dropdown'>
             <ul>
               <li className='margin-bottom-sm'>
-                <a className='highlight' href='#' onClick={closeDropdown}>
+                <a
+                  className='highlight'
+                  href='#projects'
+                  onClick={closeDropdown}
+                >
                   {t('menu.work')}
                 </a>
               </li>
