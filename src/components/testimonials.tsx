@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/testimonials.css';
 import { TestimonialType } from '../constants/types';
 import { useFirestore, useFirestoreCollectionData } from 'reactfire';
@@ -20,7 +20,7 @@ const Testimonials: React.FC = () => {
     return (
       <div className='testimonial-card'>
         <img className='quotation-image' src={Quotation} alt='Quotation mark' />
-        <p>{testimonial.content}</p>
+        <p className='testimonial-content'>{testimonial.content}</p>
         <div className='testimonial-author'>
           <div className='author-image'>
             <img
@@ -28,8 +28,10 @@ const Testimonials: React.FC = () => {
               alt={`${testimonial.author} picture`}
             />
           </div>
-          <p className='author'>{testimonial.author}</p>
-          <p className='job '>{testimonial.job}</p>
+          <div className='margin-right-xs'>
+            <p className='author'>{testimonial.author}</p>
+            <p className='job '>{testimonial.job}</p>
+          </div>
         </div>
       </div>
     );
