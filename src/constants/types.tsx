@@ -4,3 +4,10 @@ export type ProjectType = {
   cover?: string;
   technologies?: string[];
 };
+
+export type TestimonialType = {
+  author: string;
+  content: string;
+  job: string;
+  picture: string;
+};

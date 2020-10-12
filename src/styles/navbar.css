@@ -55,10 +55,12 @@
 
 .sticky-navbar {
   box-shadow: 0px 2px 8px #adadad;
+  z-index: 1000;
 }
 
 .innerSticky {
   box-shadow: inherit;
+  z-index: inherit;
   transition: box-shadow 0.3s ease-in-out;
 }
 
