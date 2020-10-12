@@ -4,6 +4,8 @@ import { TestimonialType } from '../constants/types';
 import { useFirestore, useFirestoreCollectionData } from 'reactfire';
 import { useTranslation } from 'react-i18next';
 import Quotation from '../images/quotations.svg';
+import ArrowLeft from '../images/arrow-left.svg';
+import ArrowRight from '../images/arrow-right.svg';
 
 const Testimonials: React.FC = () => {
   const { t } = useTranslation();
@@ -33,10 +35,44 @@ const Testimonials: React.FC = () => {
     );
   };
 
+  const focusOnNext = (): void => {
+    setFocus((prev) => {
+      if (prev < testimonialsData.length - 1) {
+        return prev + 1;
+      } else {
+        return 0;
+      }
+    });
+  };
+
+  const focusOnPrevious = (): void => {
+    setFocus((prev) => {
+      if (prev > 0) {
+        return prev - 1;
+      } else {
+        return testimonialsData.length - 1;
+      }
+    });
+  };
+
   return (
     <section className='testimonials-wrapper margin-horizontal-sm'>
       <h3 className='margin-bottom-lg'>{t('testimonials')}</h3>
-      <div>{getTestimonialCard(focus)}</div>
+      <div className='carousel'>
+        {getTestimonialCard(focus)}
+        <img
+          className='arrow-left'
+          onClick={focusOnPrevious}
+          src={ArrowLeft}
+          alt='Arrow left'
+        />
+        <img
+          className='arrow-right'
+          onClick={focusOnNext}
+          src={ArrowRight}
+          alt='Arrow right'
+        />
+      </div>
     </section>
   );
 };
