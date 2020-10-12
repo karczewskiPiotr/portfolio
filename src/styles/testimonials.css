@@ -60,6 +60,7 @@
   margin: -5px;
   border-radius: inherit;
   background: var(--gradient-blue);
+  filter: drop-shadow(2px 2px 5px rgba(54, 171, 255, 0.2));
 }
 
 .testimonial-author {
