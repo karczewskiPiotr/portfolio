@@ -25,7 +25,7 @@ const Testimonials: React.FC = () => {
           <div className='author-image'>
             <img
               src={testimonial.picture}
-              alt={`${testimonial.author} picture`}
+              alt={`${testimonial.author}`}
             />
           </div>
           <div className='margin-right-xs'>
