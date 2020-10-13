@@ -1,9 +1,9 @@
-import React, { Suspense } from 'react';
+import React, { ComponentType, lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './i18n';
-import App from './App';
 import { FirebaseAppProvider } from 'reactfire';
+import Loading from './components/loading';
 
 const API_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
 
@@ -17,11 +17,20 @@ const firebaseConfig = {
   appId: '1:516517349129:web:ccd36454679c733134b5d8',
 };
 
+const LazyApp = lazy(() => {
+  return Promise.all([
+    import('./App'),
+    new Promise<{ default: ComponentType<any> }>((resolve) =>
+      setTimeout(resolve, 1500)
+    ),
+  ]).then(([moduleExports]) => moduleExports);
+});
+
 ReactDOM.render(
   <React.StrictMode>
     <FirebaseAppProvider firebaseConfig={firebaseConfig}>
-      <Suspense fallback={<div>Loding</div>}>
-        <App />
+      <Suspense fallback={<Loading />}>
+        <LazyApp />
       </Suspense>
     </FirebaseAppProvider>
   </React.StrictMode>,
