@@ -56,37 +56,24 @@ h4 {
   margin-top: 0px;
 }
 
-.text-xxxl {
-  font-size: var(--text-xxxl);
-}
-
-h1,
-.text-xxl {
+h1 {
   font-size: var(--text-xxl);
 }
 
-h2,
-.text-xl {
+h2 {
   font-size: var(--text-xl);
 }
 
-h3,
-.text-lg {
+h3 {
   font-size: var(--text-lg);
 }
 
-h4,
-.text-md {
+h4 {
   font-size: var(--text-md);
 }
 
-.text-sm,
 small {
   font-size: var(--text-sm);
-}
-
-.text-xs {
-  font-size: var(--text-xs);
 }
 
 p {
