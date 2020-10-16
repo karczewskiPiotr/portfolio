@@ -6,22 +6,11 @@ import Menu from '../images/hamburger-menu.svg';
 import Dropdown from './dropdown';
 import { useTransition, animated } from 'react-spring';
 import Sticky from 'react-stickynode';
+import { useWindowWidth } from '../helpers/useWindowWidth';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [width, setWidth] = useState<number>(window.innerWidth);
-
-  const handleWindowSizeChange = (): void => {
-    setWidth(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowSizeChange);
-    };
-  });
+  const { width } = useWindowWidth();
 
   useEffect(() => {
     if (width >= 992) {
