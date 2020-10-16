@@ -1,0 +1,31 @@
+{
+  "menu": {
+    "work": "Projekty",
+    "skills": "Umiejętności",
+    "about": "O mnie",
+    "cv": "CV"
+  },
+  "title": "Full-stack Designer & Developer",
+  "subtitle": {
+    "part1": "Projektuje i tworze ",
+    "part2": {
+      "var1": "rzeczy",
+      "var2": "aplikacje",
+      "var3": "strony"
+    },
+    "part3": " żyjące w internecie"
+  },
+  "contactBtn": "Skontaktuj się",
+  "seeWork": "Zobacz projekty",
+  "greetings": "Cześć, jestem Piotrek. Miło Cię poznać.",
+  "about": "Jestem studentem czwartego roku informatyki na Politechnice Łódzkiej. Tworzenie eleganckich aplikacji i stron internetowych, które żyją w sieci to moja pasja. Szybko odnajduję się w nowych technologiach i dostosowuję do wyzwań, które napotykam w swojej pracy. Skutecznie współpracuję w zespole i komunikuję się z partnerami zewnętrznymi.",
+  "skills": {
+    "part1": "Najczęstsi goście w pracy",
+    "part2": "Goście odwiedzający rzadziej",
+    "part3": "Odlegli krewni"
+  },
+  "work": "Pare rzeczy, które stworzyłem",
+  "showMore": "Pokaż więcej",
+  "testimonials": "Ludzie gadają",
+  "companies": "Firmy, z którymi współpracowałem"
+}
