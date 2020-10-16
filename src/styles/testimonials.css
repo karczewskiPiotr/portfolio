@@ -14,6 +14,8 @@
 }
 
 .testimonial-card {
+  display: flex;
+  align-items: center;
   grid-area: card;
   justify-self: center;
   position: relative;
@@ -23,6 +25,7 @@
   text-align: center;
   padding: var(--space-xl) var(--space-sm);
   max-width: 700px;
+  min-height: 110px;
 }
 
 .quotation-image {
@@ -119,8 +122,6 @@
 @media only screen and (min-width: 992px) {
   .testimonial-card {
     min-height: 90px;
-    display: flex;
-    align-items: center;
   }
 
   .testimonial-content {
