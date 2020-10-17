@@ -4,15 +4,6 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 992px) {
-  .projects-wrapper {
-    scroll-margin-top: 77px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .projects {
   margin: 0px auto;
   max-width: 870px;
@@ -31,12 +22,6 @@
   height: auto;
   width: 14px;
   vertical-align: middle;
-}
-
-@media only screen and (min-width: 992px) {
-  .arrow {
-    height: 16px;
-  }
 }
 
 .link {
@@ -62,6 +47,13 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .projects-wrapper {
+    scroll-margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .projects {
     min-width: 870px;
     display: grid;
@@ -77,5 +69,9 @@
   .project-cover {
     width: 250px;
     height: 250px;
+  }
+
+  .arrow {
+    height: 16px;
   }
 }

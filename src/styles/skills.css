@@ -4,12 +4,6 @@
   scroll-margin-top: 67px;
 }
 
-@media only screen and (min-width: 992px) {
-  .skills-wrapper {
-    scroll-margin-top: 77px;
-  }
-}
-
 .skills {
   margin: 0px auto var(--space-xxl) auto;
   background: white;
@@ -32,6 +26,10 @@
   padding: 0px var(--space-xs);
 }
 
+.technology {
+  margin: var(--space-sm) var(--space-xs);
+}
+
 @media only screen and (min-width: 768px) {
   .technologies {
     padding: 0px var(--space-xxl);
@@ -42,8 +40,8 @@
   .technologies {
     padding: 0px var(--space-xl);
   }
-}
 
-.technology {
-  margin: var(--space-sm) var(--space-xs);
+  .skills-wrapper {
+    scroll-margin-top: 77px;
+  }
 }

@@ -1,3 +1,8 @@
+.navbar {
+  background-color: white;
+  height: 67px;
+}
+
 .navbar-content {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -12,23 +17,6 @@
   padding-top: var(--space-xs);
 }
 
-.navbar {
-  background-color: white;
-  height: 67px;
-}
-
-@media only screen and (min-width: 992px) {
-  .navbar-content {
-    grid-template-areas: 'logo menu-content';
-    max-width: 1124px;
-    margin: auto;
-  }
-
-  .navbar {
-    height: 77px;
-  }
-}
-
 .logo-wrapper {
   display: flex;
   align-items: center;
@@ -39,13 +27,6 @@
   line-height: 1.1em;
   opacity: 0;
   transition: opacity 0.5s;
-}
-
-@media only screen and (min-width: 768px) {
-  .logo-identity {
-    display: inline-block;
-    opacity: 1;
-  }
 }
 
 .identity-component {
@@ -86,7 +67,24 @@
   align-self: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .logo-identity {
+    display: inline-block;
+    opacity: 1;
+  }
+}
+
 @media only screen and (min-width: 992px) {
+  .navbar-content {
+    grid-template-areas: 'logo menu-content';
+    max-width: 1124px;
+    margin: auto;
+  }
+
+  .navbar {
+    height: 77px;
+  }
+
   .menu-icon,
   .back-icon {
     display: none;

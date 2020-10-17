@@ -1,11 +1,11 @@
-.about img {
-  display: none;
-}
-
 .about {
   display: flex;
   justify-content: center;
   scroll-margin-top: 67px;
+}
+
+.about img {
+  display: none;
 }
 
 .about-content {

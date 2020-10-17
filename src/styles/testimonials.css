@@ -3,12 +3,6 @@
   scroll-margin-top: 67px;
 }
 
-@media only screen and (min-width: 992px) {
-  .testimonials-wrapper {
-    scroll-margin-top: 77px;
-  }
-}
-
 .testimonials-wrapper h3 {
   text-align: center;
 }
@@ -120,6 +114,10 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .testimonials-wrapper {
+    scroll-margin-top: 77px;
+  }
+
   .testimonial-card {
     min-height: 90px;
   }
