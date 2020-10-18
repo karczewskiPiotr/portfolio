@@ -18,7 +18,7 @@ body {
   background-size: calc(803px * 0.4) calc(700px * 0.4);
   background-repeat: repeat;
   height: fit-content;
-  padding-bottom: var(--space-xxl);
+  padding-bottom: var(--space-xl);
   box-shadow: 0px -4px 5px rgba(68, 68, 68, 0.25);
   clip-path: polygon(0 0, 100% 0, 100% 98%, 69% 96%, 38% 98%, 16% 96%, 0 97%);
 }
