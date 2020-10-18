@@ -14,9 +14,8 @@ body {
 
 .pattern-background {
   position: relative;
-  /* z-index: -1; */
-  background-image: url('./images/pattern-lighter.png');
-  background-size: auto;
+  background-image: url('./images/pattern-lighter.webp');
+  background-size: calc(803px * 0.4) calc(700px * 0.4);
   background-repeat: repeat;
   height: fit-content;
   padding-bottom: var(--space-xxl);

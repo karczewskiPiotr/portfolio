@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/landing.css';
 import { useTranslation } from 'react-i18next';
 import { Transition } from 'react-spring/renderprops';
-import MugShotDesktop from '../images/mug-desktop.png';
-import MugShotMobile from '../images/mug-mobile.png';
+import MugShotDesktop from '../images/mug-desktop-v2.webp';
+import MugShotMobile from '../images/mug-mobile-v2.webp';
 import { useWindowWidth } from '../helpers/useWindowWidth';
 
 const Landing: React.FC = () => {
