@@ -12,7 +12,7 @@
 
 .project-cover {
   width: 100%;
-  height: auto;
+  height: 250px;
   box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.25);
   border-radius: 25px;
   object-fit: cover;

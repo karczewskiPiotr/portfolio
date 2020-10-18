@@ -9,10 +9,10 @@ const About: React.FC = () => {
   return (
     <section className='about' id='about-section'>
       <img src={Background} alt='About section background' />
-      <div className='about-content'>
+      <article className='about-content'>
         <h3>{t('greetings')}</h3>
         <p>{t('about')}</p>
-      </div>
+      </article>
     </section>
   );
 };

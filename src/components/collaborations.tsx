@@ -24,10 +24,10 @@ const Collaborations: React.FC = () => {
 
   return (
     <section className='collaborations-wrapper margin-top-md'>
-      <div className='collaborations'>
+      <article className='collaborations'>
         <h4>{t('companies')}</h4>
         <div className='companies'>{getCompanies(companies)}</div>
-      </div>
+      </article>
     </section>
   );
 };

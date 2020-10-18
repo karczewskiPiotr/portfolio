@@ -9,18 +9,18 @@ import Sticky from 'react-stickynode';
 import { useWindowWidth } from '../helpers/useWindowWidth';
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [toggle, setToggle] = useState<boolean>(false);
   const { width } = useWindowWidth();
 
   useEffect(() => {
     if (width >= 992) {
-      setIsOpen(true);
-    } else if (isOpen === true) {
-      setIsOpen(false);
+      setToggle(true);
+    } else if (toggle === true) {
+      setToggle(false);
     }
   }, [width]);
 
-  const transitions = useTransition(isOpen, null, {
+  const transitions = useTransition(toggle, null, {
     from: { opacity: 0, transform: 'rotate(-270deg)' },
     enter: { opacity: 1, transform: 'rotate(0deg)' },
     leave: { opacity: 0, transform: 'rotate(270deg)' },
@@ -31,11 +31,7 @@ const Navbar: React.FC = () => {
       <nav className='navbar'>
         <div className='navbar-content'>
           <div className='logo-wrapper'>
-            <img
-              src={Logo}
-              alt='Piotr Karczewski Logo'
-              className='logo margin-left-xxs'
-            />
+            <img src={Logo} alt='Piotr Karczewski Logo' className='logo' />
             <div className='logo-identity'>
               <div className='identity-component'>Piotr</div>
               <div className='identity-component'>Karczewski</div>
@@ -50,7 +46,7 @@ const Navbar: React.FC = () => {
                 alt='Hamburger menu'
                 className='menu-icon margin-right-sm'
                 onClick={() => {
-                  setIsOpen((prev) => !prev);
+                  setToggle((prev) => !prev);
                 }}
               />
             ) : (
@@ -61,12 +57,12 @@ const Navbar: React.FC = () => {
                 alt='Back icon'
                 className='back-icon margin-right-sm'
                 onClick={() => {
-                  setIsOpen((prev) => !prev);
+                  setToggle((prev) => !prev);
                 }}
               />
             )
           )}
-          <Dropdown isOpen={isOpen} windowWidth={width} setIsOpen={setIsOpen} />
+          <Dropdown toggle={toggle} windowWidth={width} setToggle={setToggle} />
         </div>
       </nav>
     </Sticky>

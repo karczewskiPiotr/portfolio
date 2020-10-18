@@ -19,10 +19,10 @@ const Testimonials: React.FC = () => {
     const testimonial = testimonialsData[index] as TestimonialType;
 
     return (
-      <div className='testimonial-card' style={props}>
+      <article className='testimonial-card' style={props}>
         <img className='quotation-image' src={Quotation} alt='Quotation mark' />
         <p className='testimonial-content'>{testimonial.content}</p>
-        <div className='testimonial-author'>
+        <footer className='testimonial-author'>
           <div className='author-image'>
             <img src={testimonial.picture} alt={`${testimonial.author}`} />
           </div>
@@ -30,8 +30,8 @@ const Testimonials: React.FC = () => {
             <p className='author'>{testimonial.author}</p>
             <p className='job '>{testimonial.job}</p>
           </div>
-        </div>
-      </div>
+        </footer>
+      </article>
     );
   };
 

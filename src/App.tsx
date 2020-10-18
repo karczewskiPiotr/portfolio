@@ -9,7 +9,7 @@ import Testimonials from './components/testimonials';
 
 const App: React.FC = () => {
   return (
-    <div className='app'>
+    <main className='app'>
       <Navbar />
       <Landing />
       <div className='pattern-background'>
@@ -19,7 +19,7 @@ const App: React.FC = () => {
       </div>
       <Testimonials />
       <Collaborations />
-    </div>
+    </main>
   );
 };
 

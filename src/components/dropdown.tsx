@@ -4,29 +4,29 @@ import { useTranslation } from 'react-i18next';
 import { Transition } from 'react-spring/renderprops';
 
 type Props = {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  toggle: boolean;
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
   windowWidth: number;
 };
 
-const Dropdown: React.FC<Props> = ({ isOpen, windowWidth, setIsOpen }) => {
+const Dropdown: React.FC<Props> = ({ toggle, windowWidth, setToggle }) => {
   const { t } = useTranslation();
 
   const closeDropdown = (): boolean => {
-    if (windowWidth < 992) setIsOpen(false);
+    if (windowWidth < 992) setToggle(false);
     return true;
   };
 
   return (
     <Transition
-      items={isOpen}
+      items={toggle}
       from={{ height: 0, overflow: 'hidden' }}
       enter={{ height: 'auto', overflow: 'hidden' }}
       leave={{ height: 0, overflow: 'hidden' }}
       initial={null}
     >
-      {(isOpen) =>
-        isOpen &&
+      {(toggle) =>
+        toggle &&
         ((props) => (
           <div style={props} className='dropdown'>
             <ul>

@@ -1,6 +1,6 @@
 .skills-wrapper {
-  margin-top: calc(-1 * var(--space-xl));
-  margin-bottom: var(--space-xxl);
+  margin: calc(-1 * var(--space-xl)) var(--space-sm) var(--space-xxl)
+    var(--space-sm);
   scroll-margin-top: 67px;
 }
 

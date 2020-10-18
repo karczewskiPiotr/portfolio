@@ -49,6 +49,7 @@
   grid-area: logo;
   width: 48px;
   height: auto;
+  margin-left: var(--space-xxs)
 }
 
 .menu-icon {
