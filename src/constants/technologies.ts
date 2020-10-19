@@ -1,10 +1,10 @@
 type Technologies = {
   main: string[];
-  complementary: string[],
-  rare: string[]
-}
+  complementary: string[];
+  rare: string[];
+};
 
-export const  technologies: Technologies = {
+export const technologies: Technologies = {
   main: [
     'Ruby',
     'Rails',
@@ -13,13 +13,12 @@ export const  technologies: Technologies = {
     'TypeScript',
     'JavaScript',
     'React',
-    'Redux',
     'HTML5',
     'CSS',
     'Sass',
     'Webpack',
     'Figma',
   ],
-  complementary: ['Redis', 'Sidekiq', 'Firebase', 'HAML'],
+  complementary: ['Redux', 'Redis', 'Sidekiq', 'Firebase', 'HAML'],
   rare: ['Java', 'C++', 'C#'],
 };
