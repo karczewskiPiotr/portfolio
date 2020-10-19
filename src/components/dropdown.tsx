@@ -59,6 +59,7 @@ const Dropdown: React.FC<Props> = ({ toggle, windowWidth, setToggle }) => {
                     className='highlight'
                     href='https://firebasestorage.googleapis.com/v0/b/portfolio-7c0fd.appspot.com/o/Piotr_Karczewski_CV.pdf?alt=media&token=6a3792f4-1a0d-4166-89bc-a4ae1a3ab991'
                     target='_blank'
+                    rel='noopener noreferrer'
                     onClick={closeDropdown}
                   >
                     {t('menu.cv')}
