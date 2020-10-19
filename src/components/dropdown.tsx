@@ -33,10 +33,10 @@ const Dropdown: React.FC<Props> = ({ toggle, windowWidth, setToggle }) => {
               <li className='margin-bottom-sm'>
                 <a
                   className='highlight'
-                  href='#projects'
+                  href='#about-section'
                   onClick={closeDropdown}
                 >
-                  {t('menu.work')}
+                  {t('menu.about')}
                 </a>
               </li>
               <li className='margin-bottom-sm'>
@@ -47,10 +47,10 @@ const Dropdown: React.FC<Props> = ({ toggle, windowWidth, setToggle }) => {
               <li className='margin-bottom-sm'>
                 <a
                   className='highlight'
-                  href='#about-section'
+                  href='#projects'
                   onClick={closeDropdown}
                 >
-                  {t('menu.about')}
+                  {t('menu.work')}
                 </a>
               </li>
               <li className='margin-bottom-sm resume'>
