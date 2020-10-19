@@ -36,7 +36,7 @@ const Landing: React.FC = () => {
   };
 
   return (
-    <section className='landing'>
+    <section className='landing' id='landing-section'>
       <div className='landing-content'>
         <div>
           <h1 className='title'>

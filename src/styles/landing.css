@@ -3,6 +3,7 @@
   height: calc(100vh - var(--space-md) - 64px);
   min-height: 250px;
   margin: var(--space-md) var(--space-sm) 0px var(--space-sm);
+  scroll-margin: 64px;
 }
 
 .landing-content {
@@ -78,6 +79,7 @@
     min-height: 340px;
     margin-top: 0px;
     height: calc(100vh - 77px);
+    scroll-margin: 77px;
   }
 
   .landing-content {

@@ -30,13 +30,13 @@ const Navbar: React.FC = () => {
     <Sticky activeClass='sticky-navbar' innerClass='innerSticky'>
       <nav className='navbar'>
         <div className='navbar-content'>
-          <div className='logo-wrapper'>
+          <a className='logo-wrapper' href='#landing-section'>
             <img src={Logo} alt='Piotr Karczewski Logo' className='logo' />
             <div className='logo-identity'>
               <div className='identity-component'>Piotr</div>
               <div className='identity-component'>Karczewski</div>
             </div>
-          </div>
+          </a>
           {transitions.map(({ item, key, props }) =>
             !item ? (
               <animated.img
