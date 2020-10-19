@@ -16,6 +16,10 @@
   z-index: -1;
 }
 
+.about-content h2 {
+  font-size: var(--text-lg);
+}
+
 @media only screen and (min-width: 992px) {
   .about {
     scroll-margin-top: 77px;
@@ -33,5 +37,14 @@
     background: none;
     max-width: 840px;
     box-shadow: none;
+  }
+
+  .about-content p{
+    font-size: calc(0.85 * var(--text-md));
+
+  }
+
+  .about-content h2 {
+    font-size: var(--text-xl);
   }
 }

@@ -15,7 +15,7 @@
 }
 
 .skills h4 {
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   font-weight: 550;
 }
 
@@ -30,6 +30,11 @@
   margin: var(--space-sm) var(--space-xs);
 }
 
+@media only screen and (max-width: 384px) {
+  .skills h4 {
+    font-size: 1.1em;
+  }
+}
 @media only screen and (min-width: 768px) {
   .technologies {
     padding: 0px var(--space-xxl);

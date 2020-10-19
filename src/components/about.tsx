@@ -10,7 +10,7 @@ const About: React.FC = () => {
     <section className='about' id='about-section'>
       <img src={Background} alt='About section background' />
       <article className='about-content'>
-        <h3>{t('greetings')}</h3>
+        <h2>{t('greetings')}</h2>
         <p>{t('about')}</p>
       </article>
     </section>

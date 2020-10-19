@@ -26,7 +26,7 @@ const Testimonials: React.FC = () => {
           <div className='author-image'>
             <img src={testimonial.picture} alt={`${testimonial.author}`} />
           </div>
-          <div className='margin-right-xs'>
+          <div className='author-identity'>
             <p className='author'>{testimonial.author}</p>
             <p className='job '>{testimonial.job}</p>
           </div>
@@ -57,7 +57,7 @@ const Testimonials: React.FC = () => {
 
   return (
     <section className='testimonials-wrapper margin-horizontal-sm'>
-      <h3 className='margin-bottom-lg'>{t('testimonials')}</h3>
+      <h2 className='margin-bottom-md'>{t('testimonials')}</h2>
       <div className='carousel'>
         <Transition
           items={focus}

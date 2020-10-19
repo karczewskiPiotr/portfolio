@@ -37,7 +37,6 @@
 
   .project {
     max-width: 350px;
-    font-size: var(--text-sm);
   }
 
   .project-cover {
@@ -63,7 +62,7 @@
 
   .project {
     max-width: 250px;
-    font-size: var(--text-sm);
+    font-size: calc(0.8 * var(--text-md));
   }
 
   .project-cover {

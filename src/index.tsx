@@ -21,7 +21,7 @@ const LazyApp = lazy(() => {
   return Promise.all([
     import('./App'),
     new Promise<{ default: ComponentType<any> }>((resolve) =>
-      setTimeout(resolve, 1500)
+      setTimeout(resolve, 1200)
     ),
   ]).then(([moduleExports]) => moduleExports);
 });

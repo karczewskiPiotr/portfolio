@@ -90,7 +90,7 @@ const Landing: React.FC = () => {
         </div>
         <img
           className='mugshot'
-          src={width > 992 ? MugShotDesktop : MugShotMobile}
+          src={width >= 992 ? MugShotDesktop : MugShotMobile}
           alt='Piotr Karczewski'
         />
       </div>

@@ -3,7 +3,7 @@
   scroll-margin-top: 67px;
 }
 
-.testimonials-wrapper h3 {
+.testimonials-wrapper h2 {
   text-align: center;
 }
 
@@ -163,5 +163,9 @@
   .author-image {
     margin: none;
     order: 3;
+  }
+
+  .author-identity {
+    margin-right: var(--space-xs);
   }
 }
